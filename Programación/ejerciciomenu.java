@@ -9,7 +9,7 @@ public class menu {
 		a = b;
 		b = aux;
 		
-		System.out.println("El valor de a es " + a + " y el valor de b es " + b);
+		System.out.println("El valor de la variable a es " + a + " y el valor de b es " + b);
 	}
 	
 	//Crear funcion2
