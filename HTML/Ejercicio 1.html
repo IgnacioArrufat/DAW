@@ -1,0 +1,44 @@
+
+
+CREATE TABLE Actor(
+    dni VARCHAR(9) PRIMARY KEY,
+    nombre VARCHAR(50),
+    fecha DATE,
+    nacionalidad VARCHAR(15)
+  );
+  
+CREATE TABLE Personaje(
+    nombre VARCHAR(50),
+    raza VARCHAR(50),
+    graduacion VARCHAR(50),
+    dni VARCHAR (9),
+    cod_graduacion VARCHAR(50)
+  );
+  
+CREATE TABLE Capitulo(
+    titulo VARCHAR(50),
+    temporada VARCHAR(50),
+    orden VARCHAR(50),
+    primera_fecha VARCHAR(50)
+ );
+  
+CREATE TABLE Pelicula(
+    titulo VARCHAR(50),
+    año INTEGER,
+    director VARCHAR(50),
+    nombre VARCHAR(50),
+    personaje Varchar(50)
+ );
+ 
+CREATE TABLE Planeta(
+     cod_planeta VARCHAR(50),
+     nombre VARCHAR(50),
+     galaxia VARCHAR(50)
+ );
+ 
+CREATE TABLE Nave(
+    cod_nave VARCHAR(50),
+    nombre VARCHAR(50),
+    numero INTEGER,
+    tripulantes VARCHAR(50)
+ );

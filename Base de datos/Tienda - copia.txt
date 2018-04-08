@@ -1,0 +1,18 @@
+SELECT employee_id, last_name, department_id, job_id
+	FROM Emloyees
+	Where department_id >=90 and department_id <=10;
+
+SELECT employee_id, last_name, department_id, job_id
+	FROM Emloyees
+	Where department_id Between 90 AND 110;
+
+SELECT amployee_id, last_name, salary
+FROM EMPLOYEES
+WHERE salary IN (8000, 11000, 7000);
+
+SELECT amployee_id, last_name, job_id, salary
+FROM EMPLOYEES
+WHERE salary>10000 AND department_id=80;
+
+SELECT *FROM paises;
+

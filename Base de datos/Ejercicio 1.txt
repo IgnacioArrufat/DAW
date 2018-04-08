@@ -1,0 +1,143 @@
+﻿
+
+CREATE TABLE Actor(
+    dni VARCHAR(9) PRIMARY KEY,
+    nombre VARCHAR(50),
+    fecha DATE,
+    nacionalidad VARCHAR(15)
+  );
+  
+CREATE TABLE Personaje(
+    nombre VARCHAR(50),
+    raza VARCHAR(50),
+    graduacion VARCHAR(50),
+    dni VARCHAR (9),
+    cod_graduacion VARCHAR(50)
+  );
+  
+CREATE TABLE Capitulo(
+    titulo VARCHAR(50),
+    temporada VARCHAR(50),
+    orden VARCHAR(50),
+    primera_fecha VARCHAR(50)
+ );
+  
+CREATE TABLE Pelicula(
+    titulo VARCHAR(50),
+    año INTEGER,
+    director VARCHAR(50),
+    nombre VARCHAR(50),
+    personaje Varchar(50)
+ );
+ 
+CREATE TABLE Planeta(
+     cod_planeta VARCHAR(50),
+     nombre VARCHAR(50),
+     galaxia VARCHAR(50)
+ );
+ 
+CREATE TABLE Nave(
+    cod_nave VARCHAR(50),
+    nombre VARCHAR(50),
+    numero INTEGER,
+    tripulantes VARCHAR(50)
+ );
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE Actor(
+    dni VARCHAR(50) PRIMARY KEY,
+    nombre VARCHAR(50),
+    fecha DATE,
+    nacionalidad VARCHAR(15)
+  );
+  
+CREATE TABLE Personaje(
+    nombre VARCHAR(9) PRIMARY KEY,
+    raza VARCHAR(50),
+    graduacion VARCHAR(50),
+    dni VARCHAR (9),
+    cod_graduacion VARCHAR(50)
+  );
+  
+CREATE TABLE Capitulo(
+    titulo VARCHAR(9) PRIMARY KEY,
+    temporada VARCHAR(50),
+    orden VARCHAR(50),
+    primera_fecha VARCHAR(50)
+ );
+  
+CREATE TABLE Pelicula(
+    titulo VARCHAR(9) PRIMARY KEY,
+    año INTEGER,
+    director VARCHAR(50),
+    nombre VARCHAR(50),
+    personaje Varchar(50)
+ );
+ 
+CREATE TABLE Planeta(
+     cod_planeta VARCHAR(9) PRIMARY KEY,
+     nombre VARCHAR(50),
+     galaxia VARCHAR(50)
+ );
+ 
+CREATE TABLE Nave(
+    cod_nave VARCHAR(9) PRIMARY KEY,
+    nombre VARCHAR(50),
+    numero INTEGER,
+    tripulantes VARCHAR(50)
+ );
+ 
+CREATE TABLE Aparece(
+    nmbre_actor VARCHAR(9) PRIMARY KEY,
+    titulo_pelicula VARCHAR(50)
+ );
+ 
+CREATE TABLE Interpreta(
+    dni VARCHAR(9) PRIMARY KEY,
+    nombre VARCHAR(50)
+ );
+ 
+CREATE TABLE Visita(
+    Titulo_capitulo VARCHAR(9) PRIMARY KEY,
+    Cod_planeta VARCHAR(50) PRIMARY KEY,
+    Problema VARCHAR(50)
+ );
+ 
+CREATE TABLE Sale(
+    nombre_persona VARCHAR(9) PRIMARY KEY,
+    titulo_cap VARCHAR(50) PRIMARY KEY
+ );
+ 
+CREATE TABLE Llega(
+    Cod_planeta VARCHAR(9) PRIMARY KEY,
+    Cod_nave VARCHAR(9) PRIMARY KEY,
+    Problema VARCHAR(50) PRIMARY KEY
+ );
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE Visita(
+    Titulo_capitulo VARCHAR(50) ,
+    Cod_planeta VARCHAR(9) ,
+    Problema VARCHAR(50),
+    FOREIGN KEY (Titulo_capitulo) REFERENCES capitulo(Titulo_capitulo),
+    FOREIGN KEY (Cod_planeta) REFERENCES planeta(Cod_planeta) 
+ );
+ 
+CREATE TABLE Sale(
+    nombre_persona VARCHAR(50) PRIMARY KEY,
+    titulo_cap VARCHAR(50) PRIMARY KEY,
+    FOREIGN KEY (nombre_persona) REFERENCES persona(nombre_persona),
+    FOREIGN KEY (titulo_cap) REFERENCES cap(titulo_cap) 
+ );
+ 
+CREATE TABLE Llega(
+    Cod_planeta VARCHAR(50) PRIMARY KEY,
+    Cod_nave VARCHAR(50) PRIMARY KEY,
+    Problema VARCHAR(50) PRIMARY KEY,
+    FOREIGN KEY (Cod_planeta) REFERENCES planeta(Cod_planeta),
+    FOREIGN KEY (Cod_nave) REFERENCES nave(Cod_nave),
+    FOREIGN KEY (Problema) REFERENCES problema(Problema) 
+ );

@@ -1,0 +1,94 @@
+Ignacio Arrufat Tójar
+
+Ejercicios:
+
+1. Indique al menos tres ventajas e inconvenientes de usar bases de datos frente
+a los tradicionales sistemas de ficheros.
+2. Cuando accedemos a información de una Web como Amazon, ¿en qué nivel,
+dentro de la arquitectura de tres niveles, nos encontramos? Explíquelo.
+3. Enumere al menos tres objetos típicos de una base de datos indicando su
+función.
+4. Explique con sus palabras qué es el diccionario de datos de un SGBD.
+5. ¿Qué es una base de datos?
+6. Un índice de agrupamiento permite…
+7. ¿Qué se quiere decir cuando se habla de nivel conceptual?
+8. ¿Qué es un modelo?
+9. ¿Qué son los sistemas gestores de base de datos?
+
+1)
+Ventajas:
+  1.Independencia de los datos respecto a los tratamientos y viceversa
+  2.coherencia de resultados.
+  3.Mejor disponibilidad de los datos para el conjunto, de los usuarios.
+  4.reducción del espacio del almacenamiento.
+  5.Mayor eficiencia en la recogida, validación entrada de los datos al sistema.
+Inconvenientes:
+  1.Instalacion costosa
+  2.Necesita un personal especializado
+  3.Implantacion larga y dificil
+  4.Falta de rentabilidad a corto plazo
+  5.Ausencia real de normas
+
+2)
+Nivel externo porque hay varios esquemas externos o vistas de usuario.
+
+3)
+Tablas: Es un tipo de modelado de datos, donde se guardan los datos recogidos por un programa.
+Dominio: Describe un conjunto de posibles valores para cierto atributo.
+Funciones: facilitan nuestro trabajo con información que está organizada como una bases de datos, es decir, que se encuentra en un rango de celdas donde la primera fila tiene los títulos de cada columna
+
+4)
+El diccionario de datos es el lugar donde se deposita información acerca de todos los datos que forman la BD. Es una guía en la que se describe la BD y los objetos que la forman.
+
+5)
+Conjunto de datos almacenados entre los que existen relaciones lógicas y ha sido diseñada para satisfacer los requerimientos de información de una empresa y organización.
+
+6)
+Cada entrada de índice apunta a un grupo de registros (bloque) del fichero de datos.
+No todos los identificadores aparecen en el índice, solo los primeros de cadabloque.
+El campo de ordenación no es único, es decir,puede repetirse en varios registros.
+
+7)
+Nivel de base de datos cuya estructura se basa en esquemas conceptuales.
+
+8)
+Es un colección de herramientas conceptuales para describir los datos, las relaciones que existen entre ellos y sus restricciones.
+Necesarios para facilitar el diseño de BD con mucho volumen de datos.
+
+9)
+El SGBD es una aplicación que permite a los usuarios definir, crear y mantener la base de datos y proporciona acceso controlado a la misma.
+Es una herramienta que sirve de interfaz entre el usuario y la base de datos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

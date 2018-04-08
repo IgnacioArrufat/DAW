@@ -1,0 +1,23 @@
+1-Concrecion del problema
+
+--Enunciado 
+
+-Una tienda online, esponsoriza a Baikers que publicitan sus marcas y venden artículos que pueden ser ropa, componentes o bicis, estos productos son comprados por los clientes que se registran en la página de la tienda.
+a)Una tienda puede esponsorizar a mas de un biker.
+b)Los bikers pueden publicitar varias marcas.
+C)En la tienda online se pueden registrar muchos clientes para comprar artícuos.
+d)En la tienda se venden muchos artículos como ropa, componentes y bicis.
+
+--Diagrama E/R
+(Te lo he enviado a parte porque mi ordenador no tiene el Wordl instalado y lo tengo que hacer con bloc de notas este documento)
+
+2-Diseño del modelo relación
+
+Tienda(Cod_Tienda, Nombre)
+Bikers(DNI, Nombre, Edad)
+Marcas(Modelo, Nombre)
+Articulos(Precio, Nº_artículos, tipo de articulo)
+Clientes(Nº_Cliente, DNI, Nombre)
+Ropa(Precio, Marca)
+Componentes(Marca, Precio)
+Bicis(Nº_Serie, Marca, Precio)
